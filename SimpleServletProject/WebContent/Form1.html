@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sign-In Form</title>
+<link href="Signin.css" rel="stylesheet">
+<script type="text/javascript">$('.message a').click(function(){
+   $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+});</script>
+</head>
+<body>
+<div class="login-page">
+  <div class="form">
+    <form class="login-form" action="xmlServletpath" method = "post">
+    <h2>Sign-In</h2>
+      <input type="text" name="userName" placeholder="username"/>
+      <input type="password" name="userPassword" placeholder="password"/>
+      <button>login</button>
+      <p class="message">Not registered? <a href="register.html">Create an account</a></p>
+    </form>
+  </div>
+</div>
+</body>
+</html>
